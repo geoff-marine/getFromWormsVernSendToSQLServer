@@ -40,6 +40,7 @@ RUN pip install pyodbc
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
+COPY auth.py ./
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
